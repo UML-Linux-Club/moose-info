@@ -7,10 +7,11 @@ Here we collect information for installation of MOOSE on typical systems of memb
 
 This options has not been sucessfull to anyone in our club who tried. The reason is...
 
-## Install Notes on Windows 10 WLS using Ubuntu
+## Install Notes on Windows 10 WSL using Ubuntu
 
+1. 
 1.
-1.
+1. Peacock is not working on Ubuntu/WSL nor is Paraview. The alternative is to install Paraview in the Windows 10 side.
 
 ## Install Notes on Gentoo Linux (from source code)
 
