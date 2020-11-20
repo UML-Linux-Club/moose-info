@@ -51,3 +51,13 @@ This options has not been sucessfull to anyone in our club who tried. The reason
 
 ## Install Notes on Gentoo Linux (from source code)
 
+## Install Notes for Mac
+- go to https://mooseframework.inl.gov/getting_started/installation/conda.html
+- install Miniconda3 for Macintosh Users
+- proceed with install as listed
+
+## Installing Peacock for Mac
+- go to https://mooseframework.inl.gov/application_usage/peacock.html
+- follow steps listed under "Environment"
+- in order to open your bash profile to add the path, type touch ~/.bash_profile; open ~/.bash_profile
+- add the path as specified
