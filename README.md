@@ -33,3 +33,6 @@ This options has not been sucessfull to anyone in our club who tried. The reason
 ## Install Notes on Gentoo Linux (from source code)
 
 ## Install Notes for Mac
+- go to https://mooseframework.inl.gov/getting_started/installation/conda.html
+- install Miniconda3 for Macintosh Users
+- proceed with install as listed
