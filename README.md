@@ -13,7 +13,7 @@ This options has not been sucessfull to anyone in our club who tried. The reason
 1.
 1. `Peacock` is not working on `Ubuntu/WSL` nor is `Paraview`. 
 1. The alternative for visualization of `MOOSE` files is to install `Paraview` in the Windows 10 side (see below).
-## some important Install commands in 'order'for successfull installation and compilation of Moose on Windows 10 WSL using Ubuntu (after Ubuntu is installed)
+## Some Important Installation Commands in 'Order'for successfull installation and compilation of Moose on Windows 10 WSL using Ubuntu (after Ubuntu is installed)
 1.    sudo apt-get update
 1.    sudo apt-get upgrade
 1.    sudo apt-get install x11-apps libglu1-mesa
