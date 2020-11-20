@@ -3,6 +3,25 @@
 The [MOOSE](https://mooseframework.org) framework is an open-source, parallel finite element method framework.
 Here we collect information for installation of MOOSE on typical systems of members of the UML Linux Club.
 
+## Updating Moose and Conda
+
+Updating Conda
+1. conda activate moose
+1. conda update --all
+
+Make sure to update both conda and moose at the same time. You should update it weekly
+
+Updating Moose
+1. cd ~/projects/moose
+1. git fetch origin
+1. git rebase origin/master
+
+Then return to your application, re-compile, and test
+1. cd ~/projects/YourAppName
+1. make clobberall
+1. make -j4
+1. ./run_tests -j4
+
 ## Install Notes on a Windows 10 Virtualbox Host with a Ubuntu Gest
 
 This options has not been sucessfull to anyone in our club who tried. The reason is...
