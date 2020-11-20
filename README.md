@@ -13,6 +13,37 @@ This options has not been sucessfull to anyone in our club who tried. The reason
 1.
 1. `Peacock` is not working on `Ubuntu/WSL` nor is `Paraview`. 
 1. The alternative for visualization of `MOOSE` files is to install `Paraview` in the Windows 10 side (see below).
+## some important Install commands in 'order'for successfull installation and compilation of Moose on Windows 10 WSL using Ubuntu (after Ubuntu is installed)
+1.    sudo apt-get update
+1.    sudo apt-get upgrade
+1.    sudo apt-get install x11-apps libglu1-mesa
+1.    echo "export DISPLAY=localhost:0" >> ~/.bashrc
+1.    echo "export DISPLAY=localhost:0" >> ~/.bashrc
+1.    exit
+1.    ls
+1.    curl -L -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+1.    bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/miniconda3
+1.    export PATH=$HOME/miniconda3/bin:$PATH
+1.    conda config --add channels conda-forge
+1.    conda config --add channels idaholab
+1.    conda create --name moose moose-libmesh moose-tools
+1.    exit
+1.    conda activate moose
+1.    ls
+1.    export PATH=~/miniconda3/bin:$PATH
+1.    conda activate moose
+1.    conda init bash
+1.    exit
+1.    conda activate moose
+1.    mkdir ~/projects
+1.    cd ~/projects
+1.    git clone https://github.com/idaholab/moose.git
+1.    cd moose
+1.    git checkout master
+1.    cd ~/projects/moose/test
+1.    make -j 4
+1.    sudo apt install make
+1.    make -j 4
 
 ## Install Notes of `Paraview` for `Windows 10 WSL`
  1. Go to the [Paraview site](https://www.paraview.org/download)
