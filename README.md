@@ -32,3 +32,4 @@ This options has not been sucessfull to anyone in our club who tried. The reason
 
 ## Install Notes on Gentoo Linux (from source code)
 
+## Install Notes for Mac
