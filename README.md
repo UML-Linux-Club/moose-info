@@ -36,6 +36,7 @@ This options has not been sucessfull to anyone in our club who tried. The reason
 1.    sudo apt-get update
 1.    sudo apt-get upgrade
 1.    sudo apt-get install x11-apps libglu1-mesa
+1.    sudo apt-get install build-essenisals
 1.    echo "export DISPLAY=localhost:0" >> ~/.bashrc
 1.    echo "export DISPLAY=localhost:0" >> ~/.bashrc
 1.    exit
