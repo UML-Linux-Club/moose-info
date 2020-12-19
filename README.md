@@ -16,7 +16,7 @@ Gentoo users are well accustomed to building from source hence these notes are b
 1. Build a system-wide `PETSc` library.
 1. `mkdir ~/pick-a-place`
 1. `cd ~/pick-a-place`
-1. `git clone https://github.com/idaholab/moose'
+1. `git clone https://github.com/idaholab/moose`
 1. `cd ~/pick-a-place/moose`
 1. `git checkout master`
 
