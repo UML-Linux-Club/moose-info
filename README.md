@@ -4,7 +4,7 @@ The [MOOSE](https://mooseframework.org) framework is an open-source, parallel fi
 Here we collect information for installation of MOOSE on typical systems of members of the UML Linux Club.
 
 # Table of Contents<a id="toc">
-+ [Gentoo Linux Install](#gentoo)
++ [Gentoo Linux](#gentoo)
 + [Windows 10 Virtualbox Ubuntu Guest](#win10-vbox)
 + [Windows 10 WSL w/ Ubuntu](#win10-wsl)
 + [Mac OS](#macos)
