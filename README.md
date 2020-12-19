@@ -3,33 +3,62 @@
 The [MOOSE](https://mooseframework.org) framework is an open-source, parallel finite element method framework.
 Here we collect information for installation of MOOSE on typical systems of members of the UML Linux Club.
 
-## Updating Moose and Conda
+# Table of Contents<a id="toc">
++ [Gentoo Linux Install](#gentoo)
++ [Windows 10 Virtualbox Ubuntu Guest](#win10-vbox)
++ [Windows 10 WSL w/ Ubuntu](#win10-wsl)
++ [Mac OS](#macos)
 
-Updating Conda
-1. `conda activate moose`
-1. `conda update --all`
+## [Install on Gentoo Linux (from source code)](#toc)<a id="gentoo"></a>
 
-Make sure to update both conda and moose at the same time. You should update it weekly
+Gentoo users are well accustomed to building from source hence these notes are brief and sufficient.
 
-Updating Moose
-1. `cd ~/projects/moose`
+1. Build a system-wide `PETSc` library.
+1. `mkdir ~/pick-a-place`
+1. `cd ~/pick-a-place`
+1. `git clone https://github.com/idaholab/moose'
+1. `cd ~/pick-a-place/moose`
+1. `git checkout master`
+
+Update `moose`:
+
 1. `git fetch origin`
 1. `git rebase origin/master`
+1. `git pull`
 
-Then return to your application, re-compile, and test
-1. `cd ~/projects/YourAppName`
-1. `make clobberall`
-1. `make -j4`
-1. `./run_tests -j4`
+Make sure environment variables are set before compiling `LibMesh`. Examples are left below:
 
-## Install Notes on a Windows 10 Virtualbox Host with a Ubuntu Gest
+ + `export MOOSE_JOBS=8`
+ + `export MOOSE_DIR=/home/moose-projects/moose`
+ + `export PETSC_DIR=/usr/local/petsc_ompi`
+ + `export MPI_HOME=/usr/local/ompi`
+ + `export PATH=$MOOSE_DIR/python/peacock:$PATH`
 
-This options has not been sucessfull to anyone in our club who tried. The reason is...
+Build everything:
 
-## Install Notes on Windows 10 WSL using Ubuntu
+ +  `./scripts/update_and_rebuild_libmesh.sh`
 
-1. 
-1.
+Testing
+
+ 1. `cd test`
+ 1. `make -j 4`
+ 1. `./run_tests -j 4`
+ 
+Rebuilding or updating `moose`. This should be done from time to time but it will be time-consuming.
+
+ 1. `cd ~/path-to-moose/`
+ 1. `git clean -xfd`
+ 1. `git submodule deinit -f libmesh`
+ 1. `git submodule update --init --recursive libmesh`
+ 1. `./scripts/update_and_rebuild_libmesh.sh`
+ 1. go back above and re-do the testing step
+
+## [Install on Windows 10 Virtualbox Host with a Ubuntu Gest](#toc)<a id="win10-vbox"></a>
+
+*This options has not been sucessfull to anyone in our club who tried. The reason is...*
+
+## [Install Notes on Windows 10 WSL using Ubuntu](#toc)<a id="win10-wsl"></a>
+
 1. `Peacock` is not working on `Ubuntu/WSL` nor is `Paraview`. 
 1. The alternative for visualization of `MOOSE` files is to install `Paraview` in the Windows 10 side (see below).
 ## Some Important Installation Commands in 'Order'for successfull installation and compilation of Moose on Windows 10 WSL using Ubuntu (after Ubuntu is installed)
@@ -81,14 +110,14 @@ This options has not been sucessfull to anyone in our club who tried. The reason
  1. Next to this icon is a drop down tap called `vtxblockcolors`
  1. Change this to the variable of interest. 
 
-## Install Notes on Gentoo Linux (from source code)
 
-## Install Notes for Mac
+## [Install on Mac OS](#toc)<a id="macos"></a>
+
 - go to https://mooseframework.inl.gov/getting_started/installation/conda.html
 - install Miniconda3 for Macintosh Users
 - proceed with install as listed
 
-## Installing Peacock for Mac
+Installing Peacock for Mac
 - go to https://mooseframework.inl.gov/application_usage/peacock.html
 - follow steps listed under "Environment"
 - in order to open your bash profile to add the path, type touch ~/.bash_profile; open ~/.bash_profile
