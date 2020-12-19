@@ -113,6 +113,8 @@ Rebuilding or updating `moose`. This should be done from time to time but it wil
 
 ## [Install on Mac OS](#toc)<a id="macos"></a>
 
+We are still havig issues with the Mac install...
+
 - go to https://mooseframework.inl.gov/getting_started/installation/conda.html
 - install Miniconda3 for Macintosh Users
 - proceed with install as listed
