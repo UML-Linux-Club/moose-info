@@ -67,20 +67,16 @@ Rebuilding or updating `moose`. This should be done from time to time but it wil
 1.    `sudo apt-get install x11-apps libglu1-mesa`
 1.    `sudo apt-get install build-essential`
 1.    `echo "export DISPLAY=localhost:0" >> ~/.bashrc`
-1.    `echo "export DISPLAY=localhost:0" >> ~/.bashrc`
 1.    Restart
 1.    `curl -L -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
 1.    `bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/miniconda3`
 1.    `export PATH=$HOME/miniconda3/bin:$PATH`
 1.    `conda config --add channels conda-forge`
 1.    `conda config --add channels idaholab`
-1.    `conda create --name moose moose-libmesh moose-tools`
-1.    Restart
-1.    `conda activate moose`
 1.    `export PATH=~/miniconda3/bin:$PATH`
-1.    `conda activate moose`
 1.    `conda init bash`
 1.    Restart
+1.    `conda create --name moose moose-libmesh moose-tools`
 1.    `conda activate moose`
 1.    `mkdir ~/projects`
 1.    `cd ~/projects`
