@@ -3,7 +3,8 @@
 The [MOOSE](https://mooseframework.org) framework is an open-source, parallel finite element method framework.
 Here we collect information for installation of MOOSE on typical systems of members of the UML Linux Club.
 
-<span style="color:red"><b>A [course on ODE/PDEs](https://github.com/dpploy/engy-5310) at UMass Lowell, Dept. of Chemical Engineering, Nuclear Energy Program, is in development where the notes and homework could be used during club meetings on this topic: MOOSE.<b></span>
+<span style="color:red"><b>A [course on ODE/PDEs, Engy-5310 Computational Continuum Transport Phenomena (Nuclear Energy)
+](https://github.com/dpploy/engy-5310) at UMass Lowell, Dept. of Chemical Engineering, Nuclear Energy Program, is in development where the notes and homework could be used during club meetings on this topic: MOOSE.<b></span>
 
 # Table of Contents<a id="toc">
 + [Gentoo Linux](#gentoo)
